@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arthopod Classifier</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module">
+    import { Client } from "https://esm.sh/@gradio/client";
+
+    let client;
+
+    async function setupClient() {
+      client = await Client.connect("Sambit94/Arthopod_Classifier");
+    }
+
+    async function handleFileUpload(file) {
+      const loading = document.getElementById("loading");
+      const results = document.getElementById("results");
+
+      loading.style.display = "inline-block";
+      results.innerHTML = "";
+
+      try {
+        const result = await client.predict("/predict", {
+          img: file,
+        });
+
+        const label = result.data;
+        const imageUrl = URL.createObjectURL(file);
+        results.innerHTML = `<img src="${imageUrl}" width="300"><p><strong>${label}</strong></p>`;
+      } catch (error) {
+        results.innerHTML = `<p style="color:red;">Prediction failed. ${error.message}</p>`;
+      } finally {
+        loading.style.display = "none";
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      setupClient();
+
+      const input = document.getElementById("photo");
+      input.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (file) handleFileUpload(file);
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Classify an Arthropod</h1>
+  <input id="photo" type="file" accept="image/*">
+  <div id="results"></div>
+  <div id="loading" class="spinner" style="display: none;"></div>
+</body>
+</html>
