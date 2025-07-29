@@ -3,5 +3,6 @@ The artho-train model creates an image model for classifying arthropods using co
 It is based on the 'convnext_small' image model in the timm library; So, pip install and import if not already done
 
 The artho-app uses Gradio to create a temporary webpage to test the app
+* The app
 
 A space using Huggingface server is made to run the app: https://sambit94-arthopod-classifier.hf.space/?__theme=system&deep_link=_el2dhGuEqo
