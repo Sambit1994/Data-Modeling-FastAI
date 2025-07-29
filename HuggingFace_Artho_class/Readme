@@ -6,4 +6,4 @@ The artho-app uses Gradio to create a temporary webpage to test the app
 * The app classifies an uploaded picture into 6 categories ('Arachnida', 'Crustacea', 'Insecta', 'Chilopoda', 'Diplopoda', and 'Inconclusive')
 * The model classifies accurately for roughly 70-75% (the inconclusives are the primary outliers)
 
-A space using Huggingface server is made to run the app: https://huggingface.co/spaces/Sambit94/Arthopod_Classifier
+A space using Huggingface server is made to run the API: https://huggingface.co/spaces/Sambit94/Arthopod_Classifier
