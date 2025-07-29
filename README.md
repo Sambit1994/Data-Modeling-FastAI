@@ -7,4 +7,4 @@ Original scripts are linked from Kaggle
 
 1) fastai-random-image-analysis.ipynb: Distinguish a picture as Human, Plant, Animal, or inanimate
    
-1) arthopod-class-test1.ipynb: Classify an arthropod picture under the categories: Arachnida, Crustacea, Insecta, Chilopoda, Diplopoda
+2) artho-traning-models.ipynb: Train various models for classifying an arthropod picture under the categories: Arachnida, Crustacea, Insecta, Chilopoda, Diplopoda 
