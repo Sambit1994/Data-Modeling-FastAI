@@ -7,4 +7,4 @@ Traditional machine learning with Scikit-learn. Manual feature engineering and i
 
 
 titanic-survival-pred-fastai.py:
-Deep learning with fastai. Automated preprocessing, neural networks, and advanced training techniques for potentially higher accuracy.
+Deep learning with fastai. Automated preprocessing, neural networks, and advanced training techniques.
