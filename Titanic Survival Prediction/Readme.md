@@ -1,8 +1,6 @@
 The folder contains scripts to model tabular data using the Titanic survival database. The database can be collected from here: [Kaggle](https://www.kaggle.com/c/titanic)
 
-https://www.kaggle.com/c/titanic
-
-The two Kaggle notebooks present NN models to predict the survival rate using passengers' information. 
+The two Kaggle notebooks present NN models to predict the survival rate using passengers' information. The scripts are based on the FastAi course
 
 titanic-survival-pred-scratch.py:
 Traditional machine learning with Scikit-learn. Manual feature engineering and interpretable models like logistic regression.
