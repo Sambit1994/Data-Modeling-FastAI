@@ -1,4 +1,4 @@
-# Fastai_test
+# Data-Modeling
 Data modeling using fast.ai and PyTorch
 
 Contains various scripts to use Fast.ai and PyTorch for data modeling  
