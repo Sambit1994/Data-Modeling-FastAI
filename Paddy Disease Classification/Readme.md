@@ -1,1 +1,1 @@
-
+The scripts are ML models for image classification of Paddy diseases. The data source is collected from here: [Paddy Doctor: Paddy Disease Classification](https://www.kaggle.com/competitions/paddy-disease-classification)
