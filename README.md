@@ -13,4 +13,4 @@ Original scripts are linked from Kaggle
 
 4) Paddy Disease Classification: Showcases different examples of transfer learning to predict diseased paddy from a collected image dataset
 
-5) 
+5) Collaborative Filtering.ipynb: Description of collaborative filtering method in deep learning
